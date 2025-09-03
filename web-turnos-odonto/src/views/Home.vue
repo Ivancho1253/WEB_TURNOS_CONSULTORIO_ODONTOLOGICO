@@ -23,10 +23,11 @@
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
       <div class="section-container">
         <ul class="flex justify-center space-x-8 py-4">
-          <li><a href="#inicio" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300">Inicio</a></li>
-          <li><a href="#servicios" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300">Servicios</a></li>
-          <li><a href="#profesionales" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300">Profesionales</a></li>
-          <li><a href="#contacto" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300">Contacto</a></li>
+          <li><a href="#inicio" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Inicio</a></li>
+          <li><a href="#servicios" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Servicios</a></li>
+          <li><a href="#profesionales" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Profesionales</a></li>
+          <li><a href="#mapa" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Contacto</a></li>
+          <li><a href="#turnos" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Turnos</a></li>
         </ul>
       </div>
     </nav>
@@ -46,9 +47,9 @@
     </section>
 
     <!-- Services Section -->
-    <section id="servicios" class="py-20 bg-white">
+    <section id="servicios" class="py-20 bg-white scroll-mt-20">
       <div class="section-container">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 animate-fade-in">
           <h2 class="text-4xl md:text-5xl font-bold text-dental-800 mb-6 font-serif">
             Servicios Ofrecidos
           </h2>
@@ -58,7 +59,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="card p-8 text-center group">
+          <div class="card p-8 text-center group animate-slide-up">
             <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
               <i class="fas fa-tooth text-2xl text-dental-600"></i>
             </div>
@@ -66,7 +67,7 @@
             <p class="text-gray-600">Diagnóstico completo para tu salud bucal.</p>
           </div>
 
-          <div class="card p-8 text-center group">
+          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.1s;">
             <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
               <i class="fas fa-teeth-open text-2xl text-dental-600"></i>
             </div>
@@ -74,7 +75,7 @@
             <p class="text-gray-600">Brackets, alineadores y corrección dental.</p>
           </div>
 
-          <div class="card p-8 text-center group">
+          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.2s;">
             <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
               <i class="fas fa-smile-beam text-2xl text-dental-600"></i>
             </div>
@@ -82,7 +83,7 @@
             <p class="text-gray-600">Sonríe con más confianza y luminosidad.</p>
           </div>
 
-          <div class="card p-8 text-center group">
+          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.3s;">
             <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
               <i class="fas fa-syringe text-2xl text-dental-600"></i>
             </div>
@@ -90,7 +91,7 @@
             <p class="text-gray-600">Reemplazo de piezas dentales con tecnología avanzada.</p>
           </div>
 
-          <div class="card p-8 text-center group">
+          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.4s;">
             <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
               <i class="fas fa-brush text-2xl text-dental-600"></i>
             </div>
@@ -98,7 +99,7 @@
             <p class="text-gray-600">Eliminación de placa y sarro para una sonrisa saludable.</p>
           </div>
 
-          <div class="card p-8 text-center group">
+          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.5s;">
             <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
               <i class="fas fa-x-ray text-2xl text-dental-600"></i>
             </div>
@@ -106,7 +107,7 @@
             <p class="text-gray-600">Tratamiento de conducto para preservar tus piezas dentales.</p>
           </div>
 
-          <div class="card p-8 text-center group">
+          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.6s;">
             <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
               <i class="fa-solid fa-teeth text-2xl text-dental-600"></i>
             </div>
@@ -114,7 +115,7 @@
             <p class="text-gray-600">Soluciones estéticas y funcionales para reemplazo dental.</p>
           </div>
 
-          <div class="card p-8 text-center group">
+          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.7s;">
             <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
               <i class="fas fa-child text-2xl text-dental-600"></i>
             </div>
@@ -126,9 +127,9 @@
     </section>
 
     <!-- Professionals Section -->
-    <section id="profesionales" class="py-20">
+    <section id="profesionales" class="py-20 scroll-mt-20">
       <div class="section-container">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 animate-fade-in">
           <h2 class="text-4xl md:text-5xl font-bold text-dental-800 mb-6 font-serif">
             Nuestros Profesionales
           </h2>
@@ -138,7 +139,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          <div class="card p-8 text-center">
+          <div class="card p-8 text-center animate-slide-up" style="animation-delay: 0.2s;">
             <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
               <img 
                 src="/images/pictureDra.Alejandra.jpeg" 
@@ -150,7 +151,7 @@
             <p class="text-gray-600">Especialista en odontología general y estética dental</p>
           </div>
 
-          <div class="card p-8 text-center">
+          <div class="card p-8 text-center animate-slide-up" style="animation-delay: 0.4s;">
             <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
               <img 
                 src="/images/pictureDra.Daniela.jpeg" 
@@ -166,9 +167,9 @@
     </section>
 
     <!-- Mapa -->
-    <section id="mapa" class="py-16 bg-white">
+    <section id="mapa" class="py-16 bg-white scroll-mt-20">
       <div class="section-container">
-        <div class="text-center mb-12">
+        <div class="text-center mb-12 animate-fade-in">
           <h2 class="text-4xl md:text-5xl font-bold text-dental-800 mb-6 font-serif">
             Nuestra Ubicación
           </h2>
@@ -238,11 +239,11 @@
     </section>
     
     <!-- Reservar Turno -->
-    <section class="py-20 bg-dental-50">
+    <section id="turnos" class="py-20 bg-dental-50 scroll-mt-20">
       <div class="section-container">
         <div class="max-w-4xl mx-auto text-center">
           <div class="card p-12">
-            <div class="mb-8">
+            <div class="mb-8 animate-fade-in">
               <div class="w-20 h-20 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <i class="fas fa-calendar-alt text-3xl text-dental-600"></i>
               </div>
@@ -255,7 +256,7 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-              <router-link to="/turnos-alejandra" class="btn-primary w-full text-center block py-6">
+              <router-link to="/turnos-alejandra" class="btn-primary w-full text-center block py-6 animate-slide-up" style="animation-delay: 0.2s;">
                 <div class="flex flex-col items-center space-y-3">
                   <i class="fas fa-user-md text-3xl"></i>
                   <div>
@@ -265,7 +266,7 @@
                 </div>
               </router-link>
               
-              <router-link to="/turnos-daniela" class="btn-primary w-full text-center block py-6">
+              <router-link to="/turnos-daniela" class="btn-primary w-full text-center block py-6 animate-slide-up" style="animation-delay: 0.4s;">
                 <div class="flex flex-col items-center space-y-3">
                   <i class="fas fa-user-md text-3xl"></i>
                   <div>

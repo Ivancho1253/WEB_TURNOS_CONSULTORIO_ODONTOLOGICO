@@ -55,7 +55,7 @@
                 </li>
                 <li class="flex items-start">
                   <i class="fas fa-exclamation-triangle text-yellow-600 mt-1 mr-2 text-xs"></i>
-                  <span class="font-medium">La Dra. Daniela Cabrera no acepta ningún tipo de Obra Social</span>
+                  <span class="font-medium">La Dra. Daniela Cabrera acepta IASEP Y OSDE como obra social.</span>
                 </li>
               </ul>
             </div>
@@ -137,6 +137,7 @@
     <footer class="bg-dental-800 text-white py-12">
       <div class="section-container text-center">
         <p class="text-lg">&copy; 2025 Consultorio Odontológico A&D. Todos los derechos reservados.</p>
+        <p class="text-lg">Desarrollado por <a href="https://www.linkedin.com/in/ivan-cabrera-128a60281/" target="_blank" class="text-dental-200 hover:text-dental-300">Ivan G. Cabrera</a></p>
       </div>
     </footer>
   </div>
