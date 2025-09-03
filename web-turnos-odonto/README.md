@@ -9,6 +9,9 @@ Este es un sistema web para la gestión de turnos del Consultorio Odontológico 
 - **Integración con WhatsApp**: Los turnos se envían directamente por WhatsApp
 - **Diseño Responsivo**: Optimizado para dispositivos móviles y desktop
 - **Navegación SPA**: Single Page Application con Vue Router
+- **Diseño Moderno**: Interfaz atractiva con Tailwind CSS
+- **Animaciones Suaves**: Transiciones y efectos visuales mejorados
+- **UX Optimizada**: Formularios intuitivos y navegación fluida
 
 ## Estructura del Proyecto
 
@@ -59,9 +62,10 @@ src/
 
 - **Vue.js 3** - Framework JavaScript
 - **Vue Router 4** - Enrutamiento
+- **Tailwind CSS** - Framework de CSS utilitario
 - **Vite** - Herramienta de construcción
 - **Font Awesome** - Iconos
-- **CSS3** - Estilos personalizados
+- **PostCSS** - Procesador de CSS
 
 ## Configuración de WhatsApp
 
