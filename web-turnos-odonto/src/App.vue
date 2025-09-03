@@ -1,3 +1,14 @@
+<script setup>
+import { RouterView } from 'vue-router'
+</script>
+
+<template>
+  <div id="app">
+    <RouterView />
+  </div>
+</template>
+
+<style>
 /* Reset general */
 * {
   margin: 0;
@@ -10,11 +21,11 @@ body {
   background-color: #f4f9fb;
   color: #333;
   line-height: 1.6;
-  font-size: 23px; /* Tamaño base de fuente aumentado */
+  font-size: 23px;
 }
 
 .container {
-  width: 200%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
@@ -22,12 +33,12 @@ body {
 
 /* Header */
 header {
-  background: url('../images/background_header.jpg') right center/cover no-repeat;
+  background: url('./assets/images/background_header.jpg') right center/cover no-repeat;
   color: #0d6efd;
   text-align: center;
   padding: 80px 20px;
   border-bottom: 4px solid #e0f7ff;
-  min-height: 100px; /* Ajustá si querés más alto */
+  min-height: 100px;
   position: relative;
 }
 
@@ -65,7 +76,7 @@ nav ul li a {
   color: #0d6efd;
   font-weight: bold;
   padding: 8px 14px;
-  font-size: 1.5rem; /* Aumentado */
+  font-size: 1.5rem;
   border-radius: 5px;
   transition: background 0.3s;
 }
@@ -86,17 +97,17 @@ nav ul li a:hover {
 .section h2 {
   color: #0d6efd;
   margin-bottom: 20px;
-  font-size: 2rem; /* Aumentado */
+  font-size: 2rem;
 }
 
 .section ul li {
   margin-bottom: 10px;
   list-style-type: square;
   padding-left: 10px;
-  font-size: 1.3rem; /* Aumentado */
+  font-size: 1.3rem;
 }
 
-/*Servicios ofrecidos*/
+/* Servicios ofrecidos */
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -138,7 +149,7 @@ nav ul li a:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-/*El servicio card pero solo para la seccion de los profesionales*/
+/* El servicio card pero solo para la seccion de los profesionales */
 #profesionales .container {
   text-align: auto;
 }
@@ -149,7 +160,6 @@ nav ul li a:hover {
   text-align: center;
 }
 
-
 #profesionales .imagen {
   width: 120%;
   max-height: 350px;
@@ -158,19 +168,15 @@ nav ul li a:hover {
   margin-top: 15px;
 }
 
-
-/*-----------------------------------------------*/
-
 .imagen {
-  max-width: 240px;    /* ajusta si quieres más pequeño */
+  max-width: 240px;
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 ;
+  margin: 0;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 
 /* Turnos */
 .boton {
@@ -181,8 +187,10 @@ nav ul li a:hover {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 1.1rem; /* Aumentado */
+  font-size: 1.1rem;
   transition: background 0.3s, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .boton:hover {
@@ -197,13 +205,46 @@ nav ul li a:hover {
   border-radius: 8px;
 }
 
+/* WhatsApp Button */
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 14px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebc59;
+  transform: scale(1.05);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
 /* Footer */
 footer {
   background-color: #e8f7ff;
   text-align: center;
   padding: 20px;
-  font-size: 1rem; /* Aumentado */
+  font-size: 1rem;
   color: #555;
   border-top: 1px solid #bde7f7;
 }
-
+</style>
