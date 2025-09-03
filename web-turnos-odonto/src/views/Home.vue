@@ -148,7 +148,7 @@
               >
             </div>
             <h3 class="text-2xl font-bold text-dental-800 mb-4 font-serif">Dra. Maria Alejandra Baigorri</h3>
-            <p class="text-gray-600">Especialista en odontología general y estética dental</p>
+            <p class="text-gray-600">Especialista en odontología general, ortodoncia, ortopedia, cirujia y estética dental</p>
           </div>
 
           <div class="card p-8 text-center animate-slide-up" style="animation-delay: 0.4s;">
@@ -160,7 +160,7 @@
               >
             </div>
             <h3 class="text-2xl font-bold text-dental-800 mb-4 font-serif">Dra. Daniela Andrea Cabrera</h3>
-            <p class="text-gray-600">Especialista en ortodoncia y odontopediatría</p>
+            <p class="text-gray-600">Especialista en ortodoncia adulta y ortodoncia infantil, odontopediatría y estetica dental</p>
           </div>
         </div>
       </div>
