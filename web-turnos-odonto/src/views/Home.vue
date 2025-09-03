@@ -148,7 +148,7 @@
               >
             </div>
             <h3 class="text-2xl font-bold text-dental-800 mb-4 font-serif">Dra. Maria Alejandra Baigorri</h3>
-            <p class="text-gray-600">Especialista en odontología general, ortodoncia, ortopedia, cirugia y estética dental</p>
+            <p class="text-gray-600">Especialista en odontología general con adultos y niños, ortodoncia, ortopedia, cirugia y estética dental</p>
           </div>
 
           <div class="card p-8 text-center animate-slide-up" style="animation-delay: 0.4s;">
