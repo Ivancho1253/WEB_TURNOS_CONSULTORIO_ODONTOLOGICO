@@ -34,6 +34,32 @@
               </p>
             </div>
 
+            <!-- Información Importante -->
+            <div class="mb-8 p-6 bg-dental-50 rounded-lg border-l-4 border-dental-500">
+              <h3 class="text-lg font-semibold text-dental-800 mb-4 flex items-center">
+                <i class="fas fa-info-circle mr-2 text-dental-600"></i>
+                A tener en cuenta:
+              </h3>
+              <ul class="text-sm text-gray-700 space-y-2">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-dental-600 mt-1 mr-2 text-xs"></i>
+                  Los turnos están sujetos a disponibilidad
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-dental-600 mt-1 mr-2 text-xs"></i>
+                  Te contactaremos para confirmar la disponibilidad
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-dental-600 mt-1 mr-2 text-xs"></i>
+                  Horario de atención: Lunes a Viernes de 9hs a 12hs y de 16hs a 20hs
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-exclamation-triangle text-yellow-600 mt-1 mr-2 text-xs"></i>
+                  <span class="font-medium">La Dra. Maria Baigorri no acepta ningún tipo de Obra Social</span>
+                </li>
+              </ul>
+            </div>
+
             <form @submit.prevent="redirigirWhatsApp" class="space-y-6">
               <div>
                 <label for="nombre" class="block text-sm font-semibold text-dental-800 mb-2">

@@ -12,7 +12,9 @@
         </p>
         <div class="flex items-center justify-center text-lg md:text-xl animate-slide-up">
           <i class="fas fa-map-marker-alt mr-2 text-dental-200"></i>
-          <span>Clorinda, Formosa, Argentina</span>
+          <a href="#mapa" class="text-dental-200 hover:text-white transition-colors duration-300 cursor-pointer">
+            Clorinda, Formosa, Argentina
+          </a>
         </div>
       </div>
     </header>
@@ -163,110 +165,115 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacto" class="py-20 bg-white">
+    <!-- Mapa -->
+    <section id="mapa" class="py-16 bg-white">
       <div class="section-container">
-        <div class="text-center mb-16">
+        <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-bold text-dental-800 mb-6 font-serif">
-            Contacto
+            Nuestra Ubicación
           </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Encontranos aqui:
+          </p>
         </div>
-
-        <div class="max-w-4xl mx-auto">
-          <div class="card p-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div class="space-y-6">
-                <div class="flex items-center space-x-4">
-                  <div class="w-12 h-12 bg-dental-100 rounded-full flex items-center justify-center">
-                    <i class="fas fa-map-marker-alt text-dental-600"></i>
+        
+        <div class="max-w-6xl mx-auto">
+          <div class="card p-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h3 class="text-2xl font-bold text-dental-800 mb-6 font-serif">
+                  Información de Contacto
+                </h3>
+                <div class="space-y-4">
+                  <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-dental-100 rounded-full flex items-center justify-center">
+                      <i class="fas fa-map-marker-alt text-dental-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-dental-800">Dirección</h4>
+                      <p class="text-gray-600">Sarmiento 1253, Clorinda, Formosa</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 class="font-semibold text-dental-800">Dirección</h3>
-                    <p class="text-gray-600">Sarmiento 1253, Clorinda, Formosa</p>
+                  
+                  <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-dental-100 rounded-full flex items-center justify-center">
+                      <i class="fas fa-clock text-dental-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-dental-800">Horarios</h4>
+                      <p class="text-gray-600">Lunes a Viernes de 9hs a 12hs y de 16hs a 20hs</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="flex items-center space-x-4">
-                  <div class="w-12 h-12 bg-dental-100 rounded-full flex items-center justify-center">
-                    <i class="fas fa-clock text-dental-600"></i>
-                  </div>
-                  <div>
-                    <h3 class="font-semibold text-dental-800">Horario de Atención</h3>
-                    <p class="text-gray-600">Lunes a Viernes de 9hs a 12hs y de 16hs a 20hs</p>
+                  
+                  <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-dental-100 rounded-full flex items-center justify-center">
+                      <i class="fas fa-car text-dental-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-dental-800">Acceso</h4>
+                      <p class="text-gray-600">Fácil acceso con tu vehiculo</p>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div class="space-y-6">
-                <h3 class="text-2xl font-bold text-dental-800 mb-6">Reservá tu Turno</h3>
-                <div class="space-y-4">
-                  <router-link to="/turnos-alejandra" class="btn-primary w-full text-center block">
-                    <i class="fas fa-calendar-alt mr-2"></i>
-                    Turno Dra. Alejandra
-                  </router-link>
-                  <router-link to="/turnos-daniela" class="btn-primary w-full text-center block">
-                    <i class="fas fa-calendar-alt mr-2"></i>
-                    Turno Dra. Daniela
-                  </router-link>
+              
+              <div class="lg:order-first">
+                <div class="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.1234567890123!2d-57.7184!3d-25.2847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE3JzA0LjkiUyA1N8KwNDMnMDYuMiJX!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar&q=Sarmiento+1253,+Clorinda,+Formosa,+Argentina"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación del Consultorio Odontológico A&D - Sarmiento 1253, Clorinda, Formosa">
+                  </iframe>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
     </section>
-
-    <!-- Información Importante -->
-    <section class="py-16 bg-dental-50">
+    
+    <!-- Reservar Turno -->
+    <section class="py-20 bg-dental-50">
       <div class="section-container">
-        <div class="max-w-4xl mx-auto">
-          <div class="card p-8">
-            <div class="text-center mb-8">
-              <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <i class="fas fa-info-circle text-2xl text-dental-600"></i>
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="card p-12">
+            <div class="mb-8">
+              <div class="w-20 h-20 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-calendar-alt text-3xl text-dental-600"></i>
               </div>
-              <h2 class="text-3xl font-bold text-dental-800 mb-4 font-serif">
-                Información Importante
+              <h2 class="text-4xl md:text-5xl font-bold text-dental-800 mb-6 font-serif">
+                Reservá tu Turno
               </h2>
+              <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Elegí con cuál de nuestras profesionales querés agendar tu consulta
+              </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div class="space-y-4">
-                <div class="flex items-start space-x-3">
-                  <i class="fas fa-check-circle text-dental-600 mt-1"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              <router-link to="/turnos-alejandra" class="btn-primary w-full text-center block py-6">
+                <div class="flex flex-col items-center space-y-3">
+                  <i class="fas fa-user-md text-3xl"></i>
                   <div>
-                    <h3 class="font-semibold text-dental-800 mb-1">Confirmación de Turnos</h3>
-                    <p class="text-gray-600 text-sm">Te contactaremos para confirmar la disponibilidad del turno solicitado.</p>
+                    <h3 class="text-xl font-bold">Dra. Alejandra</h3>
+                    <p class="text-sm opacity-90">Baigorri</p>
                   </div>
                 </div>
-                
-                <div class="flex items-start space-x-3">
-                  <i class="fas fa-calendar-check text-dental-600 mt-1"></i>
-                  <div>
-                    <h3 class="font-semibold text-dental-800 mb-1">Disponibilidad</h3>
-                    <p class="text-gray-600 text-sm">Los turnos están sujetos a disponibilidad de agenda.</p>
-                  </div>
-                </div>
-              </div>
+              </router-link>
               
-              <div class="space-y-4">
-                <div class="flex items-start space-x-3">
-                  <i class="fas fa-clock text-dental-600 mt-1"></i>
+              <router-link to="/turnos-daniela" class="btn-primary w-full text-center block py-6">
+                <div class="flex flex-col items-center space-y-3">
+                  <i class="fas fa-user-md text-3xl"></i>
                   <div>
-                    <h3 class="font-semibold text-dental-800 mb-1">Horarios de Atención</h3>
-                    <p class="text-gray-600 text-sm">Lunes a Viernes de 9hs a 12hs y de 16hs a 20hs</p>
+                    <h3 class="text-xl font-bold">Dra. Daniela</h3>
+                    <p class="text-sm opacity-90">Cabrera</p>
                   </div>
                 </div>
-                
-                <div class="flex items-start space-x-3">
-                  <i class="fas fa-phone text-dental-600 mt-1"></i>
-                  <div>
-                    <h3 class="font-semibold text-dental-800 mb-1">Contacto Directo</h3>
-                    <p class="text-gray-600 text-sm">Para consultas urgentes, contactanos directamente por WhatsApp.</p>
-                  </div>
-                </div>
-              </div>
+              </router-link>
             </div>
           </div>
         </div>
