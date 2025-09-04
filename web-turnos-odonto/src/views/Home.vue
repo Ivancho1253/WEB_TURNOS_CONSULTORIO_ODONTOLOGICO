@@ -148,7 +148,7 @@
               >
             </div>
             <h3 class="text-2xl font-bold text-dental-800 mb-4 font-serif">Dra. Maria Alejandra Baigorri</h3>
-            <p class="text-gray-600">Especialista en odontología general con adultos y niños, ortodoncia, ortopedia, cirugia y estética dental</p>
+            <p class="text-gray-600">Especialista en Odontologia General, Diplomatura en Rehabilitación Oral. Implantologia y Prótesis. Estetica dental.</p>
           </div>
 
           <div class="card p-8 text-center animate-slide-up" style="animation-delay: 0.4s;">
@@ -160,7 +160,7 @@
               >
             </div>
             <h3 class="text-2xl font-bold text-dental-800 mb-4 font-serif">Dra. Daniela Andrea Cabrera</h3>
-            <p class="text-gray-600">Especialista en ortodoncia adulta, ortodoncia infantil, odontopediatría y estetica dental</p>
+            <p class="text-gray-600">Especialista en Ortodoncia y Ortopedia de los Maxilares, Odontopediatria. Estetica dental.</p>
           </div>
         </div>
       </div>
