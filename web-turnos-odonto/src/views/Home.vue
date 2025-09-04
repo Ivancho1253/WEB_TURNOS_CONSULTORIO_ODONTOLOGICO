@@ -4,13 +4,13 @@
     <header class="hero-bg relative min-h-screen flex items-center justify-center text-white">
       <div class="absolute inset-0 bg-black bg-opacity-20"></div>
       <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in font-serif">
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 animate-fade-in font-serif">
           Consultorio Odontológico A&D
         </h1>
-        <p class="text-xl md:text-2xl mb-8 animate-slide-up">
+        <p class="text-lg sm:text-xl md:text-2xl mb-8 animate-slide-up">
           Atención profesional para tu salud bucal
         </p>
-        <div class="flex items-center justify-center text-lg md:text-xl animate-slide-up">
+        <div class="flex items-center justify-center text-base sm:text-lg md:text-xl animate-slide-up">
           <i class="fas fa-map-marker-alt mr-2 text-dental-200"></i>
           <a href="#mapa" class="text-dental-200 hover:text-white transition-colors duration-300 cursor-pointer">
             Clorinda, Formosa, Argentina
@@ -22,24 +22,24 @@
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
       <div class="section-container">
-        <ul class="flex justify-center space-x-8 py-4">
-          <li><a href="#inicio" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Inicio</a></li>
-          <li><a href="#servicios" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Servicios</a></li>
-          <li><a href="#profesionales" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Profesionales</a></li>
-          <li><a href="#mapa" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Contacto</a></li>
-          <li><a href="#turnos" class="text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Turnos</a></li>
+        <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-8 py-3 sm:py-4">
+          <li><a href="#inicio" class="text-sm sm:text-base text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Inicio</a></li>
+          <li><a href="#servicios" class="text-sm sm:text-base text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Servicios</a></li>
+          <li><a href="#profesionales" class="text-sm sm:text-base text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Profesionales</a></li>
+          <li><a href="#mapa" class="text-sm sm:text-base text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Contacto</a></li>
+          <li><a href="#turnos" class="text-sm sm:text-base text-dental-600 hover:text-dental-800 font-semibold transition-colors duration-300 scroll-smooth">Turnos</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- Welcome Section -->
-    <section id="inicio" class="py-20">
+    <section id="inicio" class="py-16 sm:py-20">
       <div class="section-container">
-        <div class="card p-12 text-center">
-          <h2 class="text-4xl md:text-5xl font-bold text-dental-800 mb-6 font-serif">
+        <div class="card p-8 sm:p-12 text-center">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dental-800 mb-6 font-serif">
             Bienvenidos al Sistema de Turnos
           </h2>
-          <p class="text-xl text-gray-600 leading-relaxed">
+          <p class="text-lg sm:text-xl text-gray-600 leading-relaxed">
             Nos dedicamos al cuidado integral de tu sonrisa. ¡Pedí tu turno y te esperamos!
           </p>
         </div>
@@ -47,80 +47,80 @@
     </section>
 
     <!-- Services Section -->
-    <section id="servicios" class="py-20 bg-white scroll-mt-20">
+    <section id="servicios" class="py-16 sm:py-20 bg-white scroll-mt-20">
       <div class="section-container">
-        <div class="text-center mb-16 animate-fade-in">
-          <h2 class="text-4xl md:text-5xl font-bold text-dental-800 mb-6 font-serif">
+        <div class="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-dental-800 mb-6 font-serif">
             Servicios Ofrecidos
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Ofrecemos una amplia gama de tratamientos odontológicos con tecnología de vanguardia
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="card p-8 text-center group animate-slide-up">
-            <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
-              <i class="fas fa-tooth text-2xl text-dental-600"></i>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div class="card p-6 sm:p-8 text-center group animate-slide-up">
+            <div class="w-12 sm:w-16 h-12 sm:h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-dental-200 transition-colors duration-300">
+              <i class="fas fa-tooth text-xl sm:text-2xl text-dental-600"></i>
             </div>
-            <h3 class="text-xl font-semibold text-dental-800 mb-4">Consultas Generales</h3>
-            <p class="text-gray-600">Diagnóstico completo para tu salud bucal.</p>
+            <h3 class="text-lg sm:text-xl font-semibold text-dental-800 mb-2 sm:mb-4">Consultas Generales</h3>
+            <p class="text-sm sm:text-base text-gray-600">Diagnóstico completo para tu salud bucal.</p>
           </div>
 
-          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.1s;">
-            <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
-              <i class="fas fa-teeth-open text-2xl text-dental-600"></i>
+          <div class="card p-6 sm:p-8 text-center group animate-slide-up" style="animation-delay: 0.1s;">
+            <div class="w-12 sm:w-16 h-12 sm:h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-dental-200 transition-colors duration-300">
+              <i class="fas fa-teeth-open text-xl sm:text-2xl text-dental-600"></i>
             </div>
-            <h3 class="text-xl font-semibold text-dental-800 mb-4">Ortodoncia</h3>
-            <p class="text-gray-600">Brackets, alineadores y corrección dental.</p>
+            <h3 class="text-lg sm:text-xl font-semibold text-dental-800 mb-2 sm:mb-4">Ortodoncia</h3>
+            <p class="text-sm sm:text-base text-gray-600">Brackets, alineadores y corrección dental.</p>
           </div>
 
-          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.2s;">
-            <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
-              <i class="fas fa-smile-beam text-2xl text-dental-600"></i>
+          <div class="card p-6 sm:p-8 text-center group animate-slide-up" style="animation-delay: 0.2s;">
+            <div class="w-12 sm:w-16 h-12 sm:h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-dental-200 transition-colors duration-300">
+              <i class="fas fa-smile-beam text-xl sm:text-2xl text-dental-600"></i>
             </div>
-            <h3 class="text-xl font-semibold text-dental-800 mb-4">Blanqueamiento</h3>
-            <p class="text-gray-600">Sonríe con más confianza y luminosidad.</p>
+            <h3 class="text-lg sm:text-xl font-semibold text-dental-800 mb-2 sm:mb-4">Blanqueamiento</h3>
+            <p class="text-sm sm:text-base text-gray-600">Sonríe con más confianza y luminosidad.</p>
           </div>
 
-          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.3s;">
-            <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
-              <i class="fas fa-syringe text-2xl text-dental-600"></i>
+          <div class="card p-6 sm:p-8 text-center group animate-slide-up" style="animation-delay: 0.3s;">
+            <div class="w-12 sm:w-16 h-12 sm:h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-dental-200 transition-colors duration-300">
+              <i class="fas fa-syringe text-xl sm:text-2xl text-dental-600"></i>
             </div>
-            <h3 class="text-xl font-semibold text-dental-800 mb-4">Implantes</h3>
-            <p class="text-gray-600">Reemplazo de piezas dentales con tecnología avanzada.</p>
+            <h3 class="text-lg sm:text-xl font-semibold text-dental-800 mb-2 sm:mb-4">Implantes</h3>
+            <p class="text-sm sm:text-base text-gray-600">Reemplazo de piezas dentales con tecnología avanzada.</p>
           </div>
 
-          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.4s;">
-            <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
-              <i class="fas fa-brush text-2xl text-dental-600"></i>
+          <div class="card p-6 sm:p-8 text-center group animate-slide-up" style="animation-delay: 0.4s;">
+            <div class="w-12 sm:w-16 h-12 sm:h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-dental-200 transition-colors duration-300">
+              <i class="fas fa-brush text-xl sm:text-2xl text-dental-600"></i>
             </div>
-            <h3 class="text-xl font-semibold text-dental-800 mb-4">Limpieza Profesional</h3>
-            <p class="text-gray-600">Eliminación de placa y sarro para una sonrisa saludable.</p>
+            <h3 class="text-lg sm:text-xl font-semibold text-dental-800 mb-2 sm:mb-4">Limpieza Profesional</h3>
+            <p class="text-sm sm:text-base text-gray-600">Eliminación de placa y sarro para una sonrisa saludable.</p>
           </div>
 
-          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.5s;">
-            <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
-              <i class="fas fa-x-ray text-2xl text-dental-600"></i>
+          <div class="card p-6 sm:p-8 text-center group animate-slide-up" style="animation-delay: 0.5s;">
+            <div class="w-12 sm:w-16 h-12 sm:h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-dental-200 transition-colors duration-300">
+              <i class="fas fa-x-ray text-xl sm:text-2xl text-dental-600"></i>
             </div>
-            <h3 class="text-xl font-semibold text-dental-800 mb-4">Endodoncia</h3>
-            <p class="text-gray-600">Tratamiento de conducto para preservar tus piezas dentales.</p>
+            <h3 class="text-lg sm:text-xl font-semibold text-dental-800 mb-2 sm:mb-4">Endodoncia</h3>
+            <p class="text-sm sm:text-base text-gray-600">Tratamiento de conducto para preservar tus piezas dentales.</p>
           </div>
 
-          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.6s;">
-            <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
-              <i class="fa-solid fa-teeth text-2xl text-dental-600"></i>
+          <div class="card p-6 sm:p-8 text-center group animate-slide-up" style="animation-delay: 0.6s;">
+            <div class="w-12 sm:w-16 h-12 sm:h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-dental-200 transition-colors duration-300">
+              <i class="fa-solid fa-teeth text-xl sm:text-2xl text-dental-600"></i>
             </div>
-            <h3 class="text-xl font-semibold text-dental-800 mb-4">Prótesis Dentales</h3>
-            <p class="text-gray-600">Soluciones estéticas y funcionales para reemplazo dental.</p>
+            <h3 class="text-lg sm:text-xl font-semibold text-dental-800 mb-2 sm:mb-4">Prótesis Dentales</h3>
+            <p class="text-sm sm:text-base text-gray-600">Soluciones estéticas y funcionales para reemplazo dental.</p>
           </div>
 
-          <div class="card p-8 text-center group animate-slide-up" style="animation-delay: 0.7s;">
-            <div class="w-16 h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-dental-200 transition-colors duration-300">
-              <i class="fas fa-child text-2xl text-dental-600"></i>
+          <div class="card p-6 sm:p-8 text-center group animate-slide-up" style="animation-delay: 0.7s;">
+            <div class="w-12 sm:w-16 h-12 sm:h-16 bg-dental-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:bg-dental-200 transition-colors duration-300">
+              <i class="fas fa-child text-xl sm:text-2xl text-dental-600"></i>
             </div>
-            <h3 class="text-xl font-semibold text-dental-800 mb-4">Odontopediatría</h3>
-            <p class="text-gray-600">Atención dental especializada para los más pequeños.</p>
+            <h3 class="text-lg sm:text-xl font-semibold text-dental-800 mb-2 sm:mb-4">Odontopediatría</h3>
+            <p class="text-sm sm:text-base text-gray-600">Atención dental especializada para los más pequeños.</p>
           </div>
         </div>
       </div>
