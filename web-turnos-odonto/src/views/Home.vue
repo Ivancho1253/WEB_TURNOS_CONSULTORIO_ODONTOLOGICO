@@ -284,7 +284,7 @@
     <footer class="bg-dental-800 text-white py-12">
       <div class="section-container text-center">
         <p class="text-lg">&copy; 2025 Consultorio Odontológico A&D. Todos los derechos reservados.</p>
-        <p class="text-lg">Desarrollado por <a href="https://www.linkedin.com/in/ivan-cabrera-128a60281/" target="_blank" class="text-dental-200 hover:text-dental-300">Ivan G. Cabrera</a></p>
+        <p class="text-lg">Dev by <a href="https://www.linkedin.com/in/ivan-cabrera-128a60281/" target="_blank" class="text-dental-200 hover:text-dental-300">Ivan G. Cabrera</a></p>
       </div>
     </footer>
   </div>
