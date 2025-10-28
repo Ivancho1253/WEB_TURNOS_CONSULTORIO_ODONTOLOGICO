@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-accent-500 text-white font-semibold rounded-full transition-all duration-300 shadow-lg hover:bg-accent-600 hover:-translate-y-1 hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-transparent text-white font-semibold rounded-full border-2 border-white/30 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/50 hover:-translate-y-1;
+  }
+  
+  .btn-professional {
+    @apply w-full bg-gradient-to-r from-primary-600 to-secondary-600 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2;
+  }
+  
+  .btn-appointment {
+    @apply bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-md flex items-center gap-2 whitespace-nowrap;
+  }
+  
+  .card {
+    @apply bg-white rounded-3xl shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+  }
+  
+  .service-card {
+    @apply card p-10 relative overflow-hidden;
+  }
+  
+  .service-card::before {
+    content: '';
+    @apply absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 transform scale-x-0 transition-transform duration-300;
+  }
+  
+  .service-card:hover::before {
+    @apply scale-x-100;
+  }
+  
+  .service-card.featured {
+    @apply bg-gradient-to-br from-primary-600 to-secondary-600 text-white scale-105;
+  }
+  
+  .professional-card {
+    @apply bg-white rounded-3xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+  }
+  
+  .floating-card {
+    @apply absolute bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl flex items-center gap-4 text-gray-700;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .section-header {
+    @apply text-center mb-16;
+  }
+  
+  .section-badge {
+    @apply inline-block bg-gradient-to-r from-primary-600 to-secondary-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4;
+  }
+  
+  .section-title {
+    @apply font-display text-4xl lg:text-5xl font-semibold text-gray-900 mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-xl text-gray-600 max-w-2xl mx-auto;
+  }
+  
+  .highlight {
+    @apply bg-gradient-to-r from-accent-400 to-accent-500 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+}

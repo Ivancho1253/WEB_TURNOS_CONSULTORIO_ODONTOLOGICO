@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar Turno - Dra. Daniela Cabrera | Consultorio Odontológico A&D</title>
+  <link rel="icon" type="image/png" href="/images/logoConsultorio.png">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'display': ['Inter', 'sans-serif'],
+            'body': ['Montserrat', 'sans-serif']
+          },
+          colors: {
+            primary: {
+              50: '#e6f7ff',
+              100: '#bae7ff',
+              200: '#7dd3fc',
+              300: '#38bdf8',
+              400: '#0ea5e9',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#0f172a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-body bg-gradient-to-br from-primary-50 to-white min-h-screen">
+
+  <!-- Header Hero -->
+  <header class="relative bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 text-white py-20 lg:py-28 overflow-hidden">
+    <!-- Elementos decorativos -->
+    <div class="absolute inset-0 bg-black/20"></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-80 h-80 bg-white/5 rounded-full blur-2xl"></div>
+    
+    <!-- Botón de regreso -->
+    <div class="absolute top-6 left-6 z-20">
+      <a href="/" class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full font-semibold hover:bg-white/30 transition-all">
+        <span>←</span> Volver al Inicio
+      </a>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 text-center">      
+      <!-- Badge profesional -->
+      <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-6">
+        <i class="fas fa-user-md text-white/90"></i>
+        <span class="text-white font-bold font-display">Odontóloga Especialista</span>
+      </div>
+      
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-black font-display mb-4">
+        <span class="bg-gradient-to-r from-white to-white/90 bg-clip-text text-transparent">
+          Dra. Daniela Cabrera
+        </span>
+      </h1>
+      
+      <p class="text-xl md:text-2xl font-light mb-6 opacity-90">
+        Especialista en Odontopediatría
+      </p>
+      
+      <p class="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed font-medium">
+        Especialista en Odontopediatría. Atención integral para niños. Enfoque preventivo y tratamiento especializado para los más pequeños.
+      </p>
+    </div>
+  </header>
+
+  <!-- Formulario de Reserva -->
+  <main class="py-16 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+        
+        <!-- Header del formulario -->
+        <div class="bg-gradient-to-r from-primary-50 to-primary-100 px-8 py-8 border-b border-primary-200">
+          <h2 class="text-2xl md:text-3xl font-black font-display text-gray-900 mb-2">
+            📅 Agenda tu Cita
+          </h2>
+          <p class="text-gray-600 font-medium">
+            Completa el formulario y te contactaremos por WhatsApp para confirmar tu turno
+          </p>
+        </div>
+        
+        <!-- Formulario -->
+        <form action="https://wa.me/5493718461693" method="get" target="_blank" onsubmit="return redirigirWhatsApp()" class="p-8 space-y-8">
+          
+          <!-- Fecha del turno -->
+          <div class="bg-primary-50 rounded-2xl p-6 border border-primary-200">
+            <label for="fecha-turno" class="block text-lg font-bold text-gray-900 mb-4 font-display">
+              🗓️ Fecha Preferida
+            </label>
+            <input type="date" id="fecha-turno" name="fecha-turno" min="2025-01-01" max="2025-12-31"
+                   class="w-full px-4 py-4 text-lg font-semibold border-2 border-primary-300 rounded-xl focus:border-primary-500 focus:ring-4 focus:ring-primary-200 transition-all bg-white">
+          </div>
+          
+          <!-- Información personal -->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label for="nombre" class="block text-lg font-bold text-gray-900 mb-3 font-display">
+                👤 Nombre Completo
+              </label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo"
+                     class="w-full px-4 py-4 text-lg font-medium border-2 border-gray-300 rounded-xl focus:border-primary-500 focus:ring-4 focus:ring-primary-200 transition-all">
+            </div>
+            
+            <div>
+              <label for="telefono" class="block text-lg font-bold text-gray-900 mb-3 font-display">
+                📱 Teléfono
+              </label>
+              <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +54 9 3718 123456"
+                     class="w-full px-4 py-4 text-lg font-medium border-2 border-gray-300 rounded-xl focus:border-primary-500 focus:ring-4 focus:ring-primary-200 transition-all">
+            </div>
+          </div>
+          
+          <!-- Motivo de consulta -->
+          <div>
+            <label for="motivo" class="block text-lg font-bold text-gray-900 mb-3 font-display">
+              🦷 Motivo de la Consulta
+            </label>
+            <textarea id="motivo" name="motivo" rows="5" required 
+                      placeholder="Describe brevemente el motivo de tu consulta (ej: consulta pediátrica, primera visita, tratamiento específico, etc.)"
+                      class="w-full px-4 py-4 text-lg font-medium border-2 border-gray-300 rounded-xl focus:border-primary-500 focus:ring-4 focus:ring-primary-200 transition-all resize-none"></textarea>
+          </div>
+          
+          <!-- Servicios destacados -->
+          <div class="bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl p-6 text-white">
+            <h3 class="text-xl font-bold font-display mb-4">🌟 Especialidades de la Dra. Cabrera</h3>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="flex items-center gap-2 bg-white/20 rounded-lg px-3 py-2">
+                <span>👶</span> Odontopediatría
+              </div>
+              <div class="flex items-center gap-2 bg-white/20 rounded-lg px-3 py-2">
+                <span>🛡️</span> Prevención Infantil
+              </div>
+              <div class="flex items-center gap-2 bg-white/20 rounded-lg px-3 py-2">
+                <span>🎯</span> Tratamientos Especializados
+              </div>
+              <div class="flex items-center gap-2 bg-white/20 rounded-lg px-3 py-2">
+                <span>😊</span> Atención Integral
+              </div>
+            </div>
+          </div>
+          
+          <!-- Botón de envío -->
+          <div class="text-center pt-6">
+            <button type="submit" class="group relative inline-flex items-center gap-3 bg-gradient-to-r from-primary-600 to-primary-700 text-white px-12 py-6 rounded-2xl font-bold text-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl overflow-hidden">
+              <span class="relative z-10">💬</span>
+              <span class="relative z-10">Confirmar Turno por WhatsApp</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </button>
+            <p class="text-sm text-gray-500 mt-4 font-medium">
+              Te redirigiremos a WhatsApp para confirmar tu cita
+            </p>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer moderno -->
+  <footer class="bg-gradient-to-b from-gray-800 to-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid lg:grid-cols-3 gap-8 mb-12">
+        
+        <!-- Logo y descripción -->
+        <div class="text-center lg:text-left">
+          <img src="logoConsultorio.png" alt="Logo Consultorio" class="h-20 mx-auto lg:mx-0 mb-6 brightness-0 invert">
+          <h3 class="text-2xl font-black font-display text-white mb-4">
+            Consultorio Odontológico A&D
+          </h3>
+          <p class="text-gray-300 font-medium leading-relaxed">
+            Profesionales especializados en tu salud bucal. 
+            Más de 15 años cuidando sonrisas con tecnología de vanguardia.
+          </p>
+        </div>
+        
+        <!-- Contacto rápido -->
+        <div class="text-center">
+          <h4 class="text-xl font-bold font-display text-white mb-6">
+            📞 Contacto Directo
+          </h4>
+          <div class="space-y-4">
+            <a href="https://wa.me/5493718461693" target="_blank" 
+               class="flex items-center justify-center gap-3 bg-green-600 text-white px-6 py-4 rounded-xl font-bold hover:bg-green-700 transition-all duration-300 hover:scale-105 shadow-lg">
+              <span>💬</span> WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Navegación -->
+        <div class="text-center lg:text-right">
+          <h4 class="text-xl font-bold font-display text-white mb-6">
+            🔗 Enlaces Útiles
+          </h4>
+          <div class="space-y-3">
+            <a href="/" class="block text-gray-300 hover:text-white font-medium transition-colors duration-300">
+              🏠 Inicio
+            </a>
+            <a href="/turnosAlejandra.html" class="block text-gray-300 hover:text-white font-medium transition-colors duration-300">
+              📅 Turnos Dra. Alejandra
+            </a>
+            <a href="/turnosDaniela.html" class="block text-primary-400 hover:text-primary-300 font-bold transition-colors duration-300">
+              📅 Turnos Dra. Daniela
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Línea divisoria -->
+      <div class="border-t border-gray-700 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-gray-400 font-medium text-center md:text-left">
+            &copy; 2025 Consultorio Odontológico A&D. Todos los derechos reservados.
+          </p>
+          <div class="flex items-center gap-2 text-sm text-gray-500">
+            <span>💙</span>
+            <span class="font-medium">Hecho con amor para tu sonrisa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function redirigirWhatsApp() {
+      const nombre = document.getElementById('nombre').value;
+      const telefono = document.getElementById('telefono').value;
+      const motivo = document.getElementById('motivo').value;
+      const fecha = document.getElementById('fecha-turno').value;
+
+      const mensaje = `Hola, soy ${nombre}. Quisiera pedir un turno con la Dra. Daniela Cabrera para el día ${fecha}. Teléfono: ${telefono}. Motivo: ${motivo}`;
+      const url = `https://wa.me/5493718461693?text=${encodeURIComponent(mensaje)}`;
+
+      window.open(url, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>
